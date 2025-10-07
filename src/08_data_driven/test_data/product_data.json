@@ -1,0 +1,42 @@
+{
+    "valid_products": [
+        {
+            "id": "PROD001",
+            "name": "Basic Widget",
+            "price": 9.99,
+            "stock": 100
+        },
+        {
+            "id": "PROD002",
+            "name": "Premium Widget",
+            "price": 19.99,
+            "stock": 50
+        }
+    ],
+    "invalid_products": [
+        {
+            "id": "",
+            "name": "No ID",
+            "price": 9.99,
+            "stock": 100
+        },
+        {
+            "id": "PROD003",
+            "name": "",
+            "price": 19.99,
+            "stock": 50
+        },
+        {
+            "id": "PROD004",
+            "name": "Negative Price",
+            "price": -9.99,
+            "stock": 100
+        },
+        {
+            "id": "PROD005",
+            "name": "Negative Stock",
+            "price": 9.99,
+            "stock": -10
+        }
+    ]
+}

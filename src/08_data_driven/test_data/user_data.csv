@@ -1,0 +1,8 @@
+name,age,email,expected_valid
+John Doe,30,john@example.com,true
+Jane Smith,25,jane@example.com,true
+Invalid Name,0,not-an-email,false
+Young Person,15,young@example.com,false
+Old Person,150,old@example.com,false
+No Name,,email@example.com,false
+Empty Email,30,,false
