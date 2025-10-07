@@ -41,5 +41,14 @@ def test_is_palindrome_false():
 
 def test_is_palindrome_invalid_input():
     """Test that is_palindrome() raises TypeError for non-string input."""
+    
+    # Using match parameter to check exception message
+    # Here we expect a TypeError with a specific message
     with pytest.raises(TypeError, match="Input must be a string"):
         StringUtils.is_palindrome(123)
+        
+    # Alternatively, we can capture the exception and check the message manually
+    with pytest.raises(TypeError) as exc_info:
+        StringUtils.is_palindrome(123)
+    assert "Input must be a string" in str(exc_info.value)
+    
